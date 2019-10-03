@@ -28,6 +28,25 @@ describe('sum', () => {
 
 describe('multiply', () => {
   // write tests! <================================================
+  // it('returns null if fed no arguments', () => {
+  //   expect(helpers.multiply()).toBe(null);
+  // });
+  // it('returns null if fed a single argument', () => {
+  //   expect(helpers.sum(1)).toBe(null);
+  // });
+  it('multiplies positive number correctly', () => {
+    expect(helpers.multiply(3, 9)).toBe(27);
+  });
+  it('multiplies negative number correctly', () => {
+    expect(helpers.multiply(-5, -7)).toBe(35);
+  });
+  // it('throws if fed something which is not a number', () => {
+  //   expect(() => helpers.sum('1', '2')).toThrow();
+  // });
+  // it('can add three positive numbers', () => {
+  //   expect(helpers.sum(1, 2, 3)).toBe(6);
+  //   expect(helpers.sum(1, 2, 3)).not.toBe(7);
+  // });
 });
 
 describe('personMaker', () => {
